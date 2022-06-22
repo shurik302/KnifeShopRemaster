@@ -1,28 +1,28 @@
-.slick-slider{
-    z-index:-1;
-}
-.allTitle{
+.slick-slider {
+    z-index: -1;
+   }
+   .allTitle {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-.slider{
+   }
+   .slider {
     position: relative;
     display: flex;
     flex-direction: row;
-}
-.upanddownSlider{
+   }
+   .upanddownSlider {
     background-image: url(../images/background-image_title.png);
-}
-.knifeTitle{
+   }
+   .knifeTitle {
     margin-top: 35px;
-}
-.knifeTitle img{
+   }
+   .knifeTitle img {
     position: absolute;
     z-index: 9;
     right: 14%;
-}
-.circle{
+   }
+   .circle {
     position: absolute;
     width: 420px;
     height: 420px;
@@ -31,214 +31,215 @@
     right: 127px;
     top: 90px;
     z-index: 1;
-}
-.bottomTitle{
+   }
+   .bottomTitle {
     display: flex;
     flex-direction: row;
     margin-top: 270px;
     padding: 0px 160px 54px 160px;
-    justify-content: center;    
+    justify-content: center;
     gap: 180px;
-}
-.bottomTitle div{
+   }
+   .bottomTitle div {
     display: flex;
     flex-direction: row;
     gap: 180px;
     justify-content: center;
-}
-.bottomTitle div div{
+   }
+   .bottomTitle div div {
     display: flex;
     flex-direction: column;
     gap: 0;
-}
-.bottomTitle div span{
+   }
+   .bottomTitle div span {
     color: white;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-}
-.verifyTitle div{
+   }
+   .verifyTitle div {
     height: 64px;
     width: 247px;
-}
-.verifyTitle div img{
+   }
+   .verifyTitle div img {
     height: 100%;
     width: 64px;
-}
-.transportTitle div{
+   }
+   .transportTitle div {
     width: 255px;
     height: 60px;
-}
-.transportTitle div img{
+   }
+   .transportTitle div img {
     height: 100%;
     width: 90px;
-}
-.settingsTitle div{
+   }
+   .settingsTitle div {
     width: 274px;
     height: 77px;
-}
-.settingsTitle div img{
+   }
+   .settingsTitle div img {
     height: 100%;
     width: 74px;
-}
-.procentsTitle div{
+   }
+   .procentsTitle div {
     width: 211px;
     height: 66px;
     text-align: center;
-}
-.procentsTitle div img{
+   }
+   .procentsTitle div img {
     height: 100%;
     width: 67px;
-}
-.verifyTitle div img,
-.transportTitle div img,
-.settingsTitle div img,
-.procentsTitle div img{
+   }
+   .verifyTitle div img,
+   .transportTitle div img,
+   .settingsTitle div img,
+   .procentsTitle div img {
     margin: 0 auto;
-}
-.AllCategories{
+   }
+   .AllCategories {
     width: 100%;
     margin: auto;
     margin-top: 140px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 33px 30px;
-    padding:0 9% 0 9% ;
-}
-.categorie{
+    padding: 0 9% 0 9%;
+   }
+   .categorie {
     /* width: 509px;
-    height: 293px; */
+       height: 293px; */
     width: 100%;
     height: 100%;
-    box-shadow:0px 0px 10px grey ;
+    box-shadow: 0px 0px 10px grey;
     position: relative;
     overflow: hidden;
-}
-.categorie span{
+   }
+   .categorie span {
     display: block;
     font-size: 23px;
     margin-top: 27px;
     margin-left: 32px;
-}
-.categorie hr{
+   }
+   .categorie hr {
     width: 68px;
-    height: 2px; 
-    border: none; 
-    background-color: #E8AA31; /*  - так нужно */
-    color: #E8AA31;  /*  - так нужно */
+    height: 2px;
+    border: none;
+    background-color: #e8aa31; /*  - так нужно */
+    color: #e8aa31; /*  - так нужно */
     margin-left: 30px;
     margin-top: 21px;
-}
-.categorie ul{
-    list-style-type:disc ;
-    color: #E8AA31;
+   }
+   .categorie ul {
+    list-style-type: disc;
+    color: #e8aa31;
     margin-top: 40px;
-}
-.categorie ul li span{
+   }
+   .categorie ul li span {
     color: black;
     font-size: 13px;
     margin: 30px 0px 0px 0px;
-}
-.FCat img{
+   }
+   .FCat img {
     height: 276px;
     position: absolute;
-    top:30px;
+    top: 30px;
     left: 262px;
-}
-.SCat img{
+   }
+   .SCat img {
     position: absolute;
-    top:0px;
+    top: 0px;
     left: 0px;
-}
-@media (max-width:1600px) {
-    .AllCategories{
-        margin-top: 100px;
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-        gap: 33px 30px;
+   }
+   @media (max-width: 1600px) {
+    .AllCategories {
+     margin-top: 100px;
+     display: grid;
+     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+     gap: 33px 30px;
     }
-    .bottomTitle{
-        gap: 18px;
-    }
-    .bottomTitle div{
-        gap: 40px;
-    }
-}
-
-@media (max-width:1230px){
-    /* .categorie{
-        width: 400px;
-        height: 230px;
-    } */
-    .circle{
-        right: 0;
-    }
-    .knifeTitle img{
-        right: 0;
-    }
-    .bottomTitle div span{
-        font-size: 16px;
-    }
-}
-
-@media (max-width:992px) {
-    .knifeTitle img{
-        right: 3%;
-        width: 300px;
-        height: 328px;
-    }
-    .bottomTitle{
-        flex-direction: column;
-        margin-top: 260px;
-        padding-bottom: 0;
-    }
-}
-@media (max-width:860px) {
-    .AllCategories{
-        grid-template-columns:repeat(1,1fr) ;
-    }
-    /* .categorie{
-        width: 600px;
-        height: 345px;
-    } */
-}
-@media (max-width:630px) {
-    .upanddownSlider{
-        background-image: url(../images/background_bigWid.png);
-        background-repeat:no-repeat ;
-    }
-    .knifeTitle img{
-        right: 0;
-        width: 240px;
-        height: 260px;
-    }
-    .titleBott{
-        margin-top: 10px;
-    }
-    .allDescription {
-        margin-top: 0;
-    }
-    .bottomTitle{
-        margin-top:200px ;
-        padding: 0;
+    .bottomTitle {
+     gap: 18px;
     }
     .bottomTitle div {
-        flex-direction: column;
+     gap: 40px;
     }
-    .bottomTitle div div{
-        justify-content: center;
-        align-items: center;
+   }
+   
+   @media (max-width: 1230px) {
+    /* .categorie{
+           width: 400px;
+           height: 230px;
+       } */
+    .circle {
+     right: 0;
     }
-}
-@media (max-width:530px) {
-    .bottomTitle{
-        margin-top:280px ;
+    .knifeTitle img {
+     right: 0;
     }
-    .knifeTitle img{
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+    .bottomTitle div span {
+     font-size: 16px;
     }
-}
+   }
+   
+   @media (max-width: 992px) {
+    .knifeTitle img {
+     right: 3%;
+     width: 300px;
+     height: 328px;
+    }
+    .bottomTitle {
+     flex-direction: column;
+     margin-top: 260px;
+     padding-bottom: 0;
+    }
+   }
+   @media (max-width: 860px) {
+    .AllCategories {
+     grid-template-columns: repeat(1, 1fr);
+    }
+    /* .categorie{
+           width: 600px;
+           height: 345px;
+       } */
+   }
+   @media (max-width: 630px) {
+    .upanddownSlider {
+     background-image: url(../images/background_bigWid.png);
+     background-repeat: no-repeat;
+    }
+    .knifeTitle img {
+     right: 0;
+     width: 240px;
+     height: 260px;
+    }
+    .titleBott {
+     margin-top: 10px;
+    }
+    .allDescription {
+     margin-top: 0;
+    }
+    .bottomTitle {
+     margin-top: 200px;
+     padding: 0;
+    }
+    .bottomTitle div {
+     flex-direction: column;
+    }
+    .bottomTitle div div {
+     justify-content: center;
+     align-items: center;
+    }
+   }
+   @media (max-width: 530px) {
+    .bottomTitle {
+     margin-top: 280px;
+    }
+    .knifeTitle img {
+     top: 100%;
+     left: 50%;
+     transform: translateX(-50%);
+    }
+   }
+   
