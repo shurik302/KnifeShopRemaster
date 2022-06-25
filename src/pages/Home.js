@@ -10,7 +10,7 @@ import fCat from "../images/fCat.png";
 import sCat from "../images/sCat.png";
 import SliderCards from "../components/SliderCards";
 import Block from "../components/Block";
-import OursArticles from "../components/OursArticles";
+import NewsHTML from "../components/OursArticles";
 import "../stylesheets/Components.css";
 
 function Home() {
@@ -184,9 +184,10 @@ function Home() {
         textBlock="Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками."
         toPageBlock="Больше новинок"
       />
-      <OursArticles
+      {/* <div className="OursArticles">
+      <OursArticles 
         nameblock="Наши статьи"
-        imageCardF={require("../images/third_knife.png")}
+        imageCardF={require("../images/ImgFirstNew.png")}
         nameStateF="Всё о ножах: как правильно выбрать"
         dataStateF="24.07.2019"
         imageCardS={require("../images/backtestknife.png")}
@@ -199,6 +200,8 @@ function Home() {
         nameStateFR="Всё о ножах: как правильно выбрать"
         dataStateFR="24.07.2019"
       />
+      </div> */}
+      <NewsHTML/>
     </div>
   );
 }

@@ -11,11 +11,17 @@ import Delivery from './pages/Delivery';
 import News from './pages/News';
 import Personal_cabinet from './pages/Personal_cabinet';
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <Router>
+      <div className="Scroll">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
       <Navigation/>
       <Routes>
       <Route path='/' exact element={<Home/>} />
@@ -25,8 +31,18 @@ function App() {
       <Route path='/news' exact element={<News/>} />
       <Route path='/personal_cabinet' exact element={<Personal_cabinet/>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
 
 export default App;
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}

@@ -49,7 +49,7 @@ import {News} from './NewsList'
 import NewsHTML from './NewsHTML'
 function OursArticles() {
   return (
-    <div>
+    <div className='OursArticles'>
         {News.map((test,key)=>{
             return(
                 <NewsHTML
