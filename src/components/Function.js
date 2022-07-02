@@ -16,51 +16,51 @@ export default function FirstMenu() {
     const Fixed = document.querySelector('body')
     Fixed.classList.toggle('FixedB')
 }
-export function SecMenu(){
+export function SecMenu() {
     const SecMenu = document.querySelector('.SecondMenu')
     SecMenu.classList.toggle('SecondMenuClose')
 }
-export function BackSecMenu(){
+export function BackSecMenu() {
     const BackSecMenu = document.querySelector('.SecondMenu')
     BackSecMenu.classList.toggle('SecondMenuClose')
 }
-export function Categ(){
+export function Categ() {
     const Categ = document.querySelector('.Categ')
     Categ.classList.toggle('CategClose')
 }
-export function BackCateg(){
+export function BackCateg() {
     const BackCateg = document.querySelector('.Categ')
     BackCateg.classList.toggle('CategClose')
 }
-export function Proizv(){
+export function Proizv() {
     const Proizv = document.querySelector('.Proizv')
     Proizv.classList.toggle('ProizvClose')
 }
-export function BackProizv(){
+export function BackProizv() {
     const BackProizv = document.querySelector('.Proizv')
     BackProizv.classList.toggle('ProizvClose')
 }
-export function MarkStal(){
+export function MarkStal() {
     const MarkStal = document.querySelector('.MarkStal')
     MarkStal.classList.toggle('MarkStalClose')
 }
-export function BackMarkStal(){
+export function BackMarkStal() {
     const BackMarkStal = document.querySelector('.MarkStal')
     BackMarkStal.classList.toggle('MarkStalClose')
 }
-export function Zatoch(){
+export function Zatoch() {
     const Zatoch = document.querySelector('.Zatoch')
     Zatoch.classList.toggle('ZatochClose')
 }
-export function BackZatoch(){
+export function BackZatoch() {
     const BackZatoch = document.querySelector('.Zatoch')
     BackZatoch.classList.toggle('ZatochClose')
 }
-export function Masterskaya(){
+export function Masterskaya() {
     const Masterskaya = document.querySelector('.Masterskaya')
     Masterskaya.classList.toggle('MasterskayaClose')
 }
-export function BackMasterskaya(){
+export function BackMasterskaya() {
     const BackMasterskaya = document.querySelector('.Masterskaya')
     BackMasterskaya.classList.toggle('MasterskayaClose')
 }

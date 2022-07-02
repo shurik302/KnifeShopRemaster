@@ -201,7 +201,7 @@ function Home() {
         dataStateFR="24.07.2019"
       />
       </div> */}
-      <NewsHTML/>
+      <NewsHTML />
     </div>
   );
 }

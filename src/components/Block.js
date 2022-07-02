@@ -4,32 +4,32 @@ import { settingsBlock } from "./Collection";
 import SmallCard from "./SmallCard";
 import '../stylesheets/Components.css'
 
-export default class SecondItems extends Component { 
-    render(){
-  return (
-    <div className='AllBlock'>
+export default class SecondItems extends Component {
+  render() {
+    return (
+      <div className='AllBlock'>
         <div className="settingsText">
-            <span>{this.props.nameBlock}</span>
-            <span>{this.props.textBlock}</span>
-            <a href='#'>{this.props.toPageBlock}<i class="fa-solid fa-angle-right"></i></a>
+          <span>{this.props.nameBlock}</span>
+          <span>{this.props.textBlock}</span>
+          <a href='#'>{this.props.toPageBlock}<i class="fa-solid fa-angle-right"></i></a>
 
         </div>
 
         <div className="settingsSlider">
-        <style>{cssstyle}</style>
+          <style>{cssstyle}</style>
           <Slider {...settingsBlock}>
-            <SmallCard/>
-            <SmallCard/>
-            <SmallCard/>
-            <SmallCard/>
-            <SmallCard/>
-            <SmallCard/>
+            <SmallCard />
+            <SmallCard />
+            <SmallCard />
+            <SmallCard />
+            <SmallCard />
+            <SmallCard />
           </Slider>
         </div>
-        
-    </div>
-  )
-}
+
+      </div>
+    )
+  }
 }
 
 const cssstyle = `

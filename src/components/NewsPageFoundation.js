@@ -1,32 +1,32 @@
 import React from 'react';
 import '../stylesheets/News.css'
 
-function NewsPageFoundation({BackgroundImageNews,nameState,firstfoto,firstimg,secondomg,thirdimg,}) {
+function NewsPageFoundation({ BackgroundImageNews, nameState, firstfoto, firstimg, secondomg, thirdimg, }) {
   return (
     <div className='ALLPage'>
-        <div className='divwithImage'>
-            <img className='BackgroundImageNews' src={BackgroundImageNews}/>
-            <div className='techPart'>
-              test
-              <div className='divWithFoto'>
-                <img className='BackgroundImageNews' src={firstimg}/>
-                <div>
-                  <img className='BackgroundImageNews' src={secondomg}/>
-                  <img className='BackgroundImageNews' src={thirdimg}/>
-                </div>
-                
-              </div>
-              <div className='divWithInfo'></div>
+      <div className='divwithImage'>
+        <img className='BackgroundImageNews' src={BackgroundImageNews} />
+        <div className='techPart'>
+          test
+          <div className='divWithFoto'>
+            <img className='BackgroundImageNews' src={firstimg} />
+            <div>
+              <img className='BackgroundImageNews' src={secondomg} />
+              <img className='BackgroundImageNews' src={thirdimg} />
             </div>
+
+          </div>
+          <div className='divWithInfo'></div>
         </div>
+      </div>
 
 
-        <div className='contentNews'>
+      <div className='contentNews'>
 
-          
-          <div className='MainPart'></div>
 
-{/* 
+        <div className='MainPart'></div>
+
+        {/* 
           <div className='divnameState'>
             <span className='nameState'>{nameState}</span>
           </div>
@@ -39,8 +39,8 @@ function NewsPageFoundation({BackgroundImageNews,nameState,firstfoto,firstimg,se
             <span>{descriptionfor}</span>
           </div>
            */}
-          
-        </div>
+
+      </div>
 
 
     </div>

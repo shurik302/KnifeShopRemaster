@@ -10,9 +10,9 @@ import { settings } from "./Collection";
 
 export default class MultipleItems extends Component {
   render() {
-    
-    const random = targets.sort(()=>Math.random() - Math.random())
-    .sort(()=>true);
+
+    const random = targets.sort(() => Math.random() - Math.random())
+      .sort(() => true);
     return (
       <div className="SliderCards">
         <style>{cssstyle}</style>
@@ -23,46 +23,46 @@ export default class MultipleItems extends Component {
           <h1>{this.props.nameSlider}</h1>
           <a href="#">{this.props.toPage} <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        
-        <Slider {...settings}>
-          
-          {targets.map((target,id)=>(
-            <div>
-          <div className='AllSCard'>
-        <div className='divInImg'>
-            <img src={target.img}/>
-        </div>
 
-        <div className='infoCard'>
-            <span className='nameKnife'>{target.name}</span>
-            <div className='info'>
-                <span className='size'>{target.size}</span>
-                <span className='material'>{target.material}</span>
-            </div>
-            <div className='raiting'>
-                <div>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
+        <Slider {...settings}>
+
+          {targets.map((target, id) => (
+            <div>
+              <div className='AllSCard'>
+                <div className='divInImg'>
+                  <img src={target.img} />
                 </div>
-                <span className='quantityRevios'>{target.quantity} отзывов</span>
-            </div>
-            <hr/>
-               <div className='priceAndAnother'>
+
+                <div className='infoCard'>
+                  <span className='nameKnife'>{target.name}</span>
+                  <div className='info'>
+                    <span className='size'>{target.size}</span>
+                    <span className='material'>{target.material}</span>
+                  </div>
+                  <div className='raiting'>
+                    <div>
+                      <img src={star} />
+                      <img src={star} />
+                      <img src={star} />
+                      <img src={star} />
+                      <img src={star} />
+                    </div>
+                    <span className='quantityRevios'>{target.quantity} отзывов</span>
+                  </div>
+                  <hr />
+                  <div className='priceAndAnother'>
                     <span className='price'>{target.price}</span>
                     <div className='favoritesAndComparison'>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-scale-balanced"></i>
+                      <i class="fa-solid fa-heart"></i>
+                      <i class="fa-solid fa-scale-balanced"></i>
                     </div>
-            </div> 
-            <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>   
-        </div>
-    </div>
-          </div>  
-          
-          ))}      
+                  </div>
+                  <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>
+                </div>
+              </div>
+            </div>
+
+          ))}
         </Slider>
       </div>
     );
@@ -118,8 +118,4 @@ const cssstyle = `
 background-color: #E8AA31;
         
 }
-
-
-
 `
-

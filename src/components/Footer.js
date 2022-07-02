@@ -1,42 +1,47 @@
-import React from 'react'
+import React from 'react';
+import '../stylesheets/Components.css';
+import './CheckBox'
+import { check } from "../components/CheckBox";
+import { checkBtn } from "../components/CheckBox";
 
 function Footer() {
     return (
         <div className='Footer'>
             <div className='FDescription'>
                 <p>Златоустовские ножи интернет-магазин "ЗЛАТМАКС"</p>
-                <p>Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из   города оружейников - Златоуста. Златоустовские ножи известны и популярны среди потребителей как на российским рынке, так и за рубежом: ножи охотничьи, хозяйственные, туристические, рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях. На многую продукцию распространяется гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный ассортимент Златоустовских ножей. Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания.
+                <p>Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из   города оружейников - Златоуста. Златоустовские ножи известны и популярны среди потребителей как на внутреннем рынке, так и за рубежом: ножи охотничьи, хозяйственные, туристические, рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях. На многую продукцию распространяется гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный ассортимент Златоустовских ножей. Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания.
                 </p>
             </div>
             <div className='FInfo'>
                 <div>
                     <ol>
                         <li>ИНФОРМАЦИЯ</li>
-                        <li>Златоустовские ножи <br /> в Москве и Московской <br /> области</li>
-                        <li>Ножевые стали</li>
-                        <li>О нас</li>
-                        <li>Условия оплаты <br /> и доставки</li>
-                        <li>Политика <br /> конфиденциальности</li>
+                        <li><a href=''>Златоустовские ножи <br /> в Москве и Московской <br /> области</a></li>
+                        <li><a href=''>Ножевые стали</a></li>
+                        <li><a href=''>О нас</a></li>
+                        <li><a href=''>Условия оплаты <br /> и доставки</a></li>
+                        <li><a href=''>Политика <br /> конфиденциальности</a></li>
                     </ol>
                     <ol>
                         <li>СЛУЖБА ПОДДЕРЖКИ</li>
-                        <li>Контактная информация</li>
-                        <li>Возврат товара</li>
-                        <li>Карта сайта</li>
+                        <li><a href=''>Контактная информация</a></li>
+                        <li><a href=''>Возврат товара</a></li>
+                        <li><a href=''>Карта сайта</a></li>
                     </ol>
                 </div>
                 <div>
                     <ol>
-                        <li>СЛУЖБА ПОДДЕРЖКИ</li>
-                        <li>Контактная информация</li>
-                        <li>Возврат товара</li>
-                        <li>Карта сайта</li>
+                        <li>ДОПОЛНИТЕЛЬНО</li>
+                        <li><a href=''>Подарочные сертификаты</a></li>
+                        <li><a href=''>Партнеры</a></li>
+                        <li><a href=''>Товары со скидкой</a></li>
                     </ol>
                     <ol>
-                        <li>СЛУЖБА ПОДДЕРЖКИ</li>
-                        <li>Контактная информация</li>
-                        <li>Возврат товара</li>
-                        <li>Карта сайта</li>
+                        <li>ЛИЧНЫЙ КАБИНЕТ</li>
+                        <li><a href=''>Личный кабинет</a></li>
+                        <li><a href=''>История заказов</a></li>
+                        <li><a href=''>Мои закладки</a></li>
+                        <li><a href=''>Рассылка новостей</a></li>
                     </ol>
                 </div>
             </div>
@@ -45,17 +50,17 @@ function Footer() {
                 <div>
                     <ol>
                         <li>КОНТАКТЫ</li>
-                        <li><i class="fa-solid fa-phone Con"></i>8 (800) 777-49-67</li>
+                        <li><i class="fa-solid fa-phone Con"></i><a href="tel:+88007774967">8 (800) 777-49-67</a></li>
                         <li>
                             <i class="fa-solid fa-clock Con"></i>
                             <span className='ClockSpa'>Пн-Пт <br /> 7:00 - 16:00 (МСК)</span>
                         </li>
-                        <li><i class="fa-solid fa-location-dot Con"></i>Златоуст, <br /> ул. Шоссейная, <br />д. 1, офис «6Б»</li>
+                        <li><i class="fa-solid fa-location-dot Con"></i><a target="_blank" href='https://www.google.com/maps/place/Victorinox+Poland+Sp.+z+o.o./@52.2398727,20.9982136,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecc795d83b53b:0x7f863911973584ac!8m2!3d52.2398439!4d21.0004207'> Victorinox Poland Salon Firmowy<br/>ul. Ptasia 6</a></li>
                         <li><i class="fa-solid fa-envelope Con"></i>Условия оплаты <br /> и доставки</li>
                     </ol>
                     <ol>
                         <li>ПОЛЕЗНЫЕ ССЫЛКИ</li>
-                        <li>Способы оплаты и доставки</li>
+                        <li><a href='#'>Способы оплаты и доставки</a></li>
                     </ol>
                 </div>
                 <div>
@@ -70,19 +75,55 @@ function Footer() {
                     <ol>
                         <li>НОВОСТНАЯ РАССЫЛКА</li>
                         <li>Подпишитесь прямо сейчас!</li>
-                        <li className='Input'>
-                            <input type='text' placeholder='example@gmail.com'/> 
-                            <button><i class="fa-solid fa-chevron-right"></i></button>   
+                        <li className='InputL'>
+                            <form className='Input'>
+                                <input type='text' placeholder='example@gmail.com' />
+                                <button className='BtnF' type='button' onClick={checkBtn}>
+                                {/* <i class="fa-solid fa-chevron-right"></i> */}
+
+                                </button>
+                            </form>
                         </li>
                         <li className='CheckBOX'>
-                            <input type='checkbox'/><span>Я прочитал Условия соглашения и <br/>согласен с условиями </span>
+                            <input className='InputCheck' onClick={check} type='checkbox' /><span>Я прочитал Условия соглашения и <br />согласен с условиями </span>
+                            <button id="submit_2" >Проверить нажат ли checkbox</button>
                         </li>
                     </ol>
                 </div>
             </div>
-            <div className='FDetails'></div>
+            <hr />
+            <div className='FDetails'>
+                <p>Все материалы, размещенные на сайте, носят справочный характер и не являются публичной офертой, определяемойположениями Статьи 437 . При копировании материалов гиперссылка на www.zlatmax.com обязательна!</p>
+            <p>Златоустовские ножи www.zlatmax.com ©</p>
+            </div>
         </div>
     )
 }
 
 export default Footer
+
+
+
+
+
+/* if(test == false){
+    console.log('не выбран')
+}
+else{
+    console.log('выбран')
+}
+ */
+
+/* (".CheckBOX").on("click", function () {
+    let checkboxStatus = $(this).prop("checked");
+
+    console.log(checkboxStatus);
+}) */
+
+/* document.getElementById("submit_2").onclick = function(){
+
+if (document.getElementsByClassName("InputChecks")[0].checked) { 
+    alert("Чекбокс нажат -вариант №3"); 
+} 
+else { alert("Чекбокс не нажат-вариант №3"); }
+} */
